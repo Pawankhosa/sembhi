@@ -1,0 +1,55 @@
+﻿@model LLRM.Areas.Auth.Models.Service
+@{
+    ViewBag.Title = "ServiceDetails";
+    Layout = "~/Views/Shared/Sidebar.cshtml";
+}
+
+@section bread {
+    <div id="featured-title" class="clearfix featured-title-left">
+        <div id="featured-title-inner" class="wprt-container clearfix">
+            <div class="featured-title-inner-wrap">
+                <div class="featured-title-heading-wrap">
+                    <h1 class="featured-title-heading">@Model.Name</h1>
+                </div>
+
+                <div id="breadcrumbs">
+                    <div class="breadcrumbs-inner">
+                        <div class="breadcrumb-trail"><a href="#" title="Home" rel="home" class="trail-begin">Home</a> <span class="sep"><i class="rt-icon-right-arrow12"></i></span> <span class="trail-end">Our Service</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<h3>@Model.Name</h3>
+
+@Html.Raw(@Model.Description)
+
+
+@section Sidebar{
+
+
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThaR-Modifier-MoGa-628141784023191%2F%3Fhc_ref%3DARTIAF9ermhzoaPBgXqfz_bXwEtMGa6dbKkPGF5SAGUnAvmz2uyr3K71OYrSI7egWX4%26fref%3Dnf&tabs&width=340&height=180&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=755281824540788" width="340" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+    <div class="wprt-spacer clearfix" data-desktop="42" data-mobi="31" data-smobi="31" style="height:42px"></div>
+
+    <div class="wprt-content-box style-2">
+        <div class="wprt-icon-box style-6 clearfix icon-top w70 accent-bg align-left rounded-100 has-width">
+            <h3 class="heading margin-top-10 font-weight-600">
+                <a href="#">GET 10% OFF TODAY</a>
+            </h3>
+
+            <p class="desc">A Completely Safe and Advanced Cleaning Solution for both Petrol and Diesel Engines</p>
+
+            <div class="elm-btn">
+                <a class="small wprt-button accent" href="#">Click for Detail</a>
+            </div>
+        </div><!-- /.wprt-icon-box -->
+    </div><!-- /.wprt-content-box -->
+
+    <div class="wprt-spacer clearfix" data-desktop="0" data-mobi="50" data-smobi="40" style="height:0px"></div>
+
+
+}
+
+

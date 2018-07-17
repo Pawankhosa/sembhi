@@ -1,0 +1,76 @@
+﻿@model IEnumerable<LLRM.Areas.Auth.Models.Gallery>
+@{
+    ViewBag.Title = "Gallery";
+    Layout = "~/Views/Shared/Main.cshtml";
+}
+
+<div id="featured-title" class="clearfix featured-title-left">
+    <div id="featured-title-inner" class="wprt-container clearfix">
+        <div class="featured-title-inner-wrap">
+            <div class="featured-title-heading-wrap">
+                <h1 class="featured-title-heading">Gallery</h1>
+            </div>
+
+            <div id="breadcrumbs">
+                <div class="breadcrumbs-inner">
+                    <div class="breadcrumb-trail"><a href="#" title="Home" rel="home" class="trail-begin">Gallery</a> <span class="sep"><i class="rt-icon-right-arrow12"></i></span> <span class="trail-end">Album</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="main-content" class="site-main clearfix">
+    <div id="content-wrap">
+        <div id="site-content" class="site-content clearfix">
+            <div id="inner-content" class="inner-content-wrap">
+                <div class="page-content">
+                    
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="wprt-spacer clearfix" data-desktop="60" data-mobi="40" data-smobi="40" style="height:60px"></div>
+                                <div class="wprt-divider divider-center divider-solid"></div><div class="clearfix"></div>
+                                <div class="wprt-spacer clearfix" data-desktop="70" data-mobi="40" data-smobi="40" style="height:70px"></div>
+
+                            @foreach (var item in Model)
+                            {
+                                <div class="wprt-gallery-grid" data-column="3" data-column2="3" data-column3="2" data-column4="1" data-gaph="30" data-gapv="30">
+                                    <!-- /#gallery-filter -->
+                                    <div id="galleries" class="cbp">
+                                        <div class="cbp-item engine fluid electrical">
+                                            <div class="gallery-box">
+                                                <div class="inner">
+                                                    <div class="hover-effect">
+                                                        <div class="gallery-image">
+                                                            <img src="~/UploadedFiles/@item.Thumb" alt="Image">
+                                                        </div>
+                                                        <div class="text">
+                                                            <div class="icon">
+                                                                <a class="zoom-popup" href="~/UploadedFiles/@item.Image"><i class="rt-icon-zoom-in-2"></i></a>
+                                                            </div>
+                                                            <h2><a href="#" title="#">@item.Name</a></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.gallery-box -->
+                                        </div><!-- /.cbp-item -->
+                                        
+                                    </div><!-- /#galleries -->
+                                </div><!-- /.wprt-gallery-grid -->
+                               
+                            }
+
+                                <div class="wprt-spacer clearfix" data-desktop="94" data-mobi="60" data-smobi="60" style="height:94px"></div>
+                            </div><!-- /.col-md-12 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                    <!-- PROMOTION -->
+                    
+                    <!-- END PROMOTION -->
+                </div><!-- /.page-content -->
+            </div><!-- /#inner-content -->
+        </div><!-- /#site-content -->
+    </div><!-- /#content-wrap -->
+</div>

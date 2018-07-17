@@ -1,0 +1,238 @@
+﻿@using LLRM.Areas.Auth.Models
+@using Admin2.Models
+@{
+    ViewBag.Title = "AboutUs";
+    Layout = "~/Views/Shared/Main.cshtml";
+    dbcontext db = new dbcontext();
+    var pp = db.Pages.Where(x=>x.id==2).ToList();
+
+}
+
+
+<div id="featured-title" class="clearfix featured-title-left">
+    <div id="featured-title-inner" class="wprt-container clearfix">
+        <div class="featured-title-inner-wrap">
+            <div class="featured-title-heading-wrap">
+                <h1 class="featured-title-heading">About Sembhi Motor</h1>
+            </div>
+
+            <div id="breadcrumbs">
+                <div class="breadcrumbs-inner">
+                    <div class="breadcrumb-trail"><a href="#" title="Home" rel="home" class="trail-begin">Home</a> <span class="sep"><i class="rt-icon-right-arrow12"></i></span> <span class="trail-end">About Us</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <div id="main-content" class="site-main clearfix">
+    <div id="content-wrap">
+        <div id="site-content" class="site-content clearfix">
+            <div id="inner-content" class="inner-content-wrap">
+                <div class="page-content">
+                    <!-- ABOUT -->
+                    <div class="row-about">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer clearfix" data-desktop="83" data-mobi="60" data-smobi="60" style="height:83px"></div>
+
+                                    <div class="wprt-headings style-1 clearfix text-center">
+                                        <h2 class="heading clearfix">WELCOME TO Sembhi<span class="text-accent-color">Motor</span></h2>
+                                        <div class="sep clearfix"></div>
+                                        <p class="sub-heading clearfix">
+                                        Our professionals will perform diagnostic tests, fluid flush and fills, engine replacement, oil changes, and total vehicle overhauls.</p>
+                                    </div><!-- /.wprt-headings -->
+
+                                    <div class="wprt-spacer clearfix" data-desktop="45" data-mobi="40" data-smobi="40" style="height:45px"></div>
+                                </div><!-- /.col-md-12 -->
+                            </div><!-- /.row -->
+
+                            <div class="row medium-gutters">
+                                <div class="col-md-6">
+                                    <div class="wprt-images-grid" data-layout="slider" data-column="1" data-column2="1" data-column3="1" data-column4="1" data-gaph="0" data-gapv="0">
+                                        <div id="images-wrap" class="cbp cbp-caption-active cbp-caption- cbp-ready cbp-mode-slider" style="height: 365px;">
+                                            <div class="cbp-wrapper-outer">
+                                                <div class="cbp-wrapper" style="width: 1130px;">
+                                                    <div class="cbp-item" style="width: 565px; left: 0px; top: 0px;">
+                                                        <div class="cbp-item-wrapper">
+                                                            <div class="item-wrap">
+                                                                <a class="zoom-popup" href="~/UploadedFiles/@pp[0].Image">
+                                                                    <i class="rt-icon-zoom-in-2"></i>
+                                                                </a>
+                                                                <img src="~/UploadedFiles/@pp[0].Image" alt="Image">
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- /.cbp-item -->
+
+                                                    <!-- /.cbp-item -->
+                                                </div>
+                                            </div><div class="cbp-nav"><div class="cbp-nav-controls"><div class="cbp-nav-prev cbp-nav-stop" data-slider-action="prev"></div><div class="cbp-nav-next" data-slider-action="next"></div></div><div class="cbp-nav-pagination"><div class="cbp-nav-pagination-item cbp-nav-pagination-active" data-slider-action="jumpTo"></div><div class="cbp-nav-pagination-item" data-slider-action="jumpTo"></div></div></div>
+                                        </div>
+                                    </div><!-- /.wprt-images-grid -->
+
+                                    <div class="wprt-spacer clearfix" data-desktop="0" data-mobi="40" data-smobi="40" style="height:0px"></div>
+                                </div><!-- /.col-md-6 -->
+
+                                <div class="col-md-6">
+                                    @Html.Raw(pp[0].Description)
+                                </div><!-- /.col-md-6 -->
+                            </div><!-- /.row -->
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer clearfix" data-desktop="70" data-mobi="60" data-smobi="60" style="height:70px"></div>
+                                </div><!-- /.col-md-12 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div>
+                    <!-- END ABOUT -->
+                    <!-- FACTS -->
+                    <div class="row-facts bg-light-grey">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer clearfix" data-desktop="55" data-mobi="50" data-smobi="50" style="height:55px"></div>
+                                </div><!-- /.col-md-12 -->
+
+                                <div class="col-md-3">
+                                    <div class="wprt-animation-block animated fadeInUpSmall" data-animate="fadeInUpSmall" data-duration="1s" data-delay="0" data-position="80%" style="animation-duration: 1s;">
+                                        <div class="wprt-counter style-1 clearfix icon-top text-center">
+                                            <div class="inner">
+                                                <div class="icon-wrap">
+                                                    <div class="icon"><i class="as-icon-mechanic"></i></div>
+                                                </div>
+
+                                                <div class="text-wrap">
+                                                    <div class="number-wrap font-heading">
+                                                        <span class="prefix"></span><span class="number accent" data-speed="3000" data-to="320" data-inviewport="yes">320</span><span class="suffix"></span>
+                                                    </div>
+
+                                                    <div class="sep"></div>
+                                                    <h3 class="heading">EXPERIENCED TECHNICIALS</h3>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.wprt-counter -->
+                                    </div><!-- /.wprt-animation-block -->
+
+                                    <div class="wprt-spacer clearfix" data-desktop="0" data-mobi="35" data-smobi="35" style="height:0px"></div>
+                                </div><!-- /.col-md-3 -->
+
+                                <div class="col-md-3">
+                                    <div class="wprt-animation-block animated fadeInUpSmall" data-animate="fadeInUpSmall" data-duration="1s" data-delay="0.15s" data-position="80%" style="animation-delay: 0.15s; animation-duration: 1s;">
+                                        <div class="wprt-counter style-1 clearfix icon-top text-center">
+                                            <div class="inner">
+                                                <div class="icon-wrap">
+                                                    <div class="icon"><i class="as-icon-key2"></i></div>
+                                                </div>
+
+                                                <div class="text-wrap">
+                                                    <div class="number-wrap font-heading">
+                                                        <span class="prefix"></span><span class="number accent" data-speed="3000" data-to="100" data-inviewport="yes">100</span><span class="suffix">%</span>
+                                                    </div>
+
+                                                    <div class="sep"></div>
+                                                    <h3 class="heading">TRANSPARENCY MATTERS</h3>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.wprt-counter -->
+                                    </div><!-- /.wprt-animation-block -->
+
+                                    <div class="wprt-spacer clearfix" data-desktop="0" data-mobi="35" data-smobi="35" style="height:0px"></div>
+                                </div><!-- /.col-md-3 -->
+
+                                <div class="col-md-3">
+                                    <div class="wprt-animation-block animated fadeInUpSmall" data-animate="fadeInUpSmall" data-duration="1s" data-delay="0.3s" data-position="80%" style="animation-delay: 0.3s; animation-duration: 1s;">
+                                        <div class="wprt-counter style-1 clearfix icon-top text-center">
+                                            <div class="inner">
+                                                <div class="icon-wrap">
+                                                    <div class="icon"><i class="as-icon-inspection"></i></div>
+                                                </div>
+
+                                                <div class="text-wrap">
+                                                    <div class="number-wrap font-heading">
+                                                        <span class="prefix"></span><span class="number accent" data-speed="3000" data-to="9580" data-inviewport="yes">9580</span><span class="suffix"></span>
+                                                    </div>
+
+                                                    <div class="sep"></div>
+                                                    <h3 class="heading">COMPLETED PROJECTS</h3>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.wprt-counter -->
+                                    </div><!-- /.wprt-animation-block -->
+
+                                    <div class="wprt-spacer clearfix" data-desktop="0" data-mobi="35" data-smobi="35" style="height:0px"></div>
+                                </div><!-- /.col-md-3 -->
+
+                                <div class="col-md-3">
+                                    <div class="wprt-animation-block animated fadeInUpSmall" data-animate="fadeInUpSmall" data-duration="1s" data-delay="0.45s" data-position="80%" style="animation-delay: 0.45s; animation-duration: 1s;">
+                                        <div class="wprt-counter style-1 clearfix icon-top text-center">
+                                            <div class="inner">
+                                                <div class="icon-wrap">
+                                                    <div class="icon"><i class="as-icon-diagnostic"></i></div>
+                                                </div>
+
+                                                <div class="text-wrap">
+                                                    <div class="number-wrap font-heading">
+                                                        <span class="prefix"></span><span class="number accent" data-speed="3000" data-to="140" data-inviewport="yes">140</span><span class="suffix">+</span>
+                                                    </div>
+
+                                                    <div class="sep"></div>
+                                                    <h3 class="heading">PROFESSIONAL AWARDS</h3>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.wprt-counter -->
+                                    </div><!-- /.wprt-animation-block -->
+                                </div><!-- /.col-md-3 -->
+
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer clearfix" data-desktop="60" data-mobi="50" data-smobi="50" style="height:60px"></div>
+                                </div><!-- /.col-md-12 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div>
+                    <!-- END FACTS 1 -->
+                    <!-- PROMOTION -->
+                    <div class="row-promotion bg-accent">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wprt-spacer clearfix" data-desktop="25" data-mobi="25" data-smobi="35" style="height:25px"></div>
+
+                                    <div class="wprt-action-box style-1 has-icon">
+                                        <div class="inner">
+                                            <div class="heading-wrap">
+                                                <div class="text-wrap">
+                                                    <h3 class="heading">Fixed Price MOT Test includes a Comprehensive Safety Check</h3>
+                                                    <span class="icon"><i class="as-icon-speedometer2"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="button-wrap">
+                                                <a href="#" class="wprt-button white">BOOK YOUR MOT</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wprt-spacer clearfix" data-desktop="25" data-mobi="25" data-smobi="35" style="height:25px"></div>
+                                </div><!-- /.col-md-12 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div>
+                    <!-- END PROMOTION -->
+                    <!-- TEAM -->
+                    
+                    <!-- END TEAM -->
+                </div><!-- /.page-content -->
+            </div><!-- /#inner-content -->
+        </div><!-- /#site-content -->
+    </div><!-- /#content-wrap -->
+</div>
+
+
+
+@section Meta
+{
+    <meta name="description" content="@pp[0].MetaDescription">
+    <meta name="keywords" content="@pp[0].Keyword">
+
+}
