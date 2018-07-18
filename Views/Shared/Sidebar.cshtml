@@ -84,21 +84,21 @@
                             <div class="mobile-button"><span></span></div><!-- //mobile menu button -->
                             <div id="header-aside">
                                 <div class="header-aside-btn">
-                                    <a target="_blank" href="#"><span>BOOK YOUR MOT</span></a>
+                                    <a target="_blank" href="~/Home/ContactUs"><span>BOOK YOUR MOT</span></a>
                                 </div>
 
                                 <div class="header-info">
                                     <div class="inner">
                                         <div class="info-one">
                                             <div class="info-wrap">
-                                                <div class="info-i"><span><i class="rt-icon-chat2"></i></span></div>
-                                                <div class="info-c"><span class="title">@cc[0].Phone</span><br><span class="subtitle">@cc[0].Email</span></div>
+                                                <div class="info-i"><span><i class="rt-icon-phone"></i></span></div>
+                                                <div class="info-c"><span class="title">@cc[0].Phone</span></div>
                                             </div>
                                         </div>
                                         <div class="info-two">
                                             <div class="info-wrap">
-                                                <div class="info-i"><span><i class="rt-icon-alarm-clock"></i></span></div>
-                                                <div class="info-c"><span class="title">8:00 - 17:30</span><br><span class="subtitle">Monday to Saturday</span></div>
+                                                <div class="info-i"><span><i class="rt-icon-1-chat2"></i></span></div>
+                                                <div class="info-c"><span class="subtitle">@cc[0].Email</span></div>
                                             </div>
                                         </div>
                                     </div>
@@ -115,18 +115,9 @@
                                         @Html.ActionLink("Home", "Home")
 
                                     </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="#">Features</a>
-                                        <ul class="sub-menu">
-
-                                            <li class="menu-item menu-item-has-children">
+                                    <li class="menu-item menu-item">
                                                 @Html.ActionLink("About Us", "AboutUs")
-
-                                            </li>
-
-
-                                        </ul>
-                                    </li>
+                                   </li>
                                     <li class="menu-item menu-item-has-children">
                                         <a href="#">Service</a>
                                         <ul class="sub-menu">
@@ -162,53 +153,7 @@
                                     </a>
                                 </li>
                             </ul><!-- /.nav-extend -->
-                            <div class="nav-top-cart-wrapper">
-                                <a class="nav-cart-trigger" href="page-shop-cart.html">
-                                    <span class="cart-icon rt-icon-bag">
-                                        <span class="shopping-cart-items-count">6</span>
-                                    </span>
-                                </a>
-                                <div class="nav-shop-cart">
-                                    <div class="widget_shopping_cart_content">
-                                        <div class="woocommerce-min-cart-wrap">
-                                            <ul class="woocommerce-mini-cart cart_list product_list_widget ">
-                                                <li class="woocommerce-mini-cart-item mini_cart_item">
-                                                    <a href="#" class="remove"><span class="fa fa-close"></span></a><a href="#">
-                                                        <img width="150" height="150" src="~/Content/img/shop/shop-item-150x150.jpg" alt="Image">Advance Blue Oil Cans
-                                                    </a>
-
-                                                    <span class="quantity">1 × <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>65.00</span></span>
-                                                </li>
-                                                <li class="woocommerce-mini-cart-item mini_cart_item">
-                                                    <a href="#" class="remove"><span class="fa fa-close"></span></a><a href="#">
-                                                        <img width="150" height="150" src="~/Content/img/shop/shop-item-150x150.jpg" alt="Image">Simple Blue Oil Cans
-                                                    </a>
-
-                                                    <span class="quantity">3 × <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>35.00</span></span>
-                                                </li>
-                                                <li class="woocommerce-mini-cart-item mini_cart_item">
-                                                    <a href="#" class="remove"><span class="fa fa-close"></span></a><a href="#">
-                                                        <img width="150" height="150" src="~/Content/img/shop/shop-item-150x150.jpg" alt="Image">Premium Blue Oil Cans
-                                                    </a>
-
-                                                    <span class="quantity">2 × <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>45.00</span></span>
-                                                </li>
-                                            </ul>
-                                            <p class="woocommerce-mini-cart__total total"><strong>Subtotal:</strong> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>260.00</span></p>
-
-                                            <p class="woocommerce-mini-cart__buttons buttons"><a href="#" class="button wc-forward">View cart</a><a href="#" class="button checkout wc-forward">Checkout</a></p>
-                                        </div><!-- /.widget_shopping_cart_content -->
-                                    </div>
-                                </div><!-- /.nav-shop-cart -->
-                            </div><!-- /.nav-top-cart-wrapper -->
-                            <div id="header-search">
-                                <a class="header-search-icon" href="#"><span class="rt-icon-search2"></span></a>
-                                <form role="search" method="get" class="header-search-form" action="#">
-                                    <label class="screen-reader-text">Search for:</label>
-                                    <input type="text" value="" name="s" class="header-search-field" placeholder="Type and hit enter...">
-                                    <button type="submit" class="header-search-submit" title="Search">Search</button>
-                                </form>
-                            </div><!-- /#header-search -->
+                            <!-- /#header-search -->
                         </div>
                     </div><!-- /.site-navigation-wrap -->
                 </header><!-- /#site-header -->
@@ -247,15 +192,15 @@
                     <div class="bottom-bar-inner-wrap">
                         <div class="bottom-bar-content">
                             <div id="copyright">
-                                &copy; AutoService - Design by @@DoanDu with Love. All Rights Reserved.
+                                &copy; AutoService - Design by <a href="https://www.officialsolutions.in" target="_blank">Official Solutions</a>. All Rights Reserved.
                             </div><!-- /#copyright -->
                         </div><!-- /.bottom-bar-content -->
                         <div class="bottom-bar-menu">
-                            <ul class="bottom-nav">
+                            @*<ul class="bottom-nav">
                                 <li class="menu-item current-menu-item"><a href="#">Home</a></li>
                                 <li class="menu-item"><a href="#">About Us</a></li>
                                 <li class="menu-item"><a href="#">Book Your MOD</a></li>
-                            </ul>
+                            </ul>*@
                         </div><!-- /.bottom-bar-menu -->
                     </div>
                 </div>

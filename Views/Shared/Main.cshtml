@@ -83,21 +83,21 @@
                             <div class="mobile-button"><span></span></div><!-- //mobile menu button -->
                             <div id="header-aside">
                                 <div class="header-aside-btn">
-                                    <a target="_blank" href="#"><span>BOOK YOUR MOT</span></a>
+                                    <a target="_blank" href="~/Home/ContactUs"><span>BOOK YOUR MOT</span></a>
                                 </div>
 
                                 <div class="header-info">
                                     <div class="inner">
                                         <div class="info-one">
                                             <div class="info-wrap">
-                                                <div class="info-i"><span><i class="rt-icon-chat2"></i></span></div>
-                                                <div class="info-c"><span class="title">@cc[0].Phone</span><br><span class="subtitle">@cc[0].Email</span></div>
+                                                <div class="info-i"><span><i class="rt-icon-phone"></i></span></div>
+                                                <div class="info-c"><span class="title">@cc[0].Phone</span><br></div>
                                             </div>
                                         </div>
                                         <div class="info-two">
                                             <div class="info-wrap">
-                                                <div class="info-i"><span><i class="rt-icon-alarm-clock"></i></span></div>
-                                                <div class="info-c"><span class="title">8:00 - 17:30</span><br><span class="subtitle">Monday to Saturday</span></div>
+                                                <div class="info-i"><span><i class="rt-icon-1-chat2"></i></span></div>
+                                                <div class="info-c"><span class="subtitle">@cc[0].Email</span></div>
                                             </div>
                                         </div>
                                     </div>
@@ -114,17 +114,8 @@
                                         @Html.ActionLink("Home","Home")
                                         
                                     </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="#">Features</a>
-                                        <ul class="sub-menu">
-                                            
-                                            <li class="menu-item menu-item-has-children">
-                                               @Html.ActionLink("About Us","AboutUs")
-                                                
-                                            </li>
-                                            
-                                           
-                                        </ul>
+                                    <li class="menu-item menu-item">
+                                        @Html.ActionLink("About Us", "AboutUs")
                                     </li>
                                     <li class="menu-item menu-item-has-children">
                                         <a href="#">Service</a>
@@ -183,15 +174,11 @@
                     <div class="bottom-bar-inner-wrap">
                         <div class="bottom-bar-content">
                             <div id="copyright">
-                                &copy; AutoService - Design by @@DoanDu with Love. All Rights Reserved.
+                                &copy; AutoService - Design by <a href="https://www.officialsolutions.in" target="_blank">Official Solutions</a>. All Rights Reserved.
                             </div><!-- /#copyright -->
                         </div><!-- /.bottom-bar-content -->
                         <div class="bottom-bar-menu">
-                            <ul class="bottom-nav">
-                                <li class="menu-item current-menu-item"><a href="#">Home</a></li>
-                                <li class="menu-item"><a href="#">About Us</a></li>
-                                <li class="menu-item"><a href="#">Book Your MOD</a></li>
-                            </ul>
+                           
                         </div><!-- /.bottom-bar-menu -->
                     </div>
                 </div>

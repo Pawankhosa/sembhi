@@ -120,4 +120,12 @@ namespace LLRM.Areas.Auth.Models
         public string Url { get; set; }
 
     }
+    public class Feature
+    {
+        public int id { get; set; }
+        [Required]
+        public string Name { get; set; }
+        public string Image { get; set; }
+
+    }
 }

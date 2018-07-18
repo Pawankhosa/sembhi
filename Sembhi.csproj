@@ -425,6 +425,7 @@
     <Compile Include="Areas\Auth\Controllers\AccountsController.cs" />
     <Compile Include="Areas\Auth\Controllers\AlbumsController.cs" />
     <Compile Include="Areas\Auth\Controllers\ContactsController.cs" />
+    <Compile Include="Areas\Auth\Controllers\FeaturesController.cs" />
     <Compile Include="Areas\Auth\Controllers\GalleriesController.cs" />
     <Compile Include="Areas\Auth\Controllers\NewsController.cs" />
     <Compile Include="Areas\Auth\Controllers\PagesController.cs" />
@@ -550,6 +551,11 @@
     <Content Include="Areas\Auth\Views\Accounts\Index.cshtml" />
     <Content Include="Areas\Auth\Views\Accounts\Login.cshtml" />
     <Content Include="Views\Shared\Layout.cshtml" />
+    <Content Include="Areas\Auth\Views\Features\Create.cshtml" />
+    <Content Include="Areas\Auth\Views\Features\Delete.cshtml" />
+    <Content Include="Areas\Auth\Views\Features\Details.cshtml" />
+    <Content Include="Areas\Auth\Views\Features\Edit.cshtml" />
+    <Content Include="Areas\Auth\Views\Features\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

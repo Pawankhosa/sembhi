@@ -7,7 +7,7 @@
     List<slider> ss = db.sliders.ToList();
     var pp = db.Pages.Where(x => x.id == 1).ToList();
     List<Service> service = db.Services.ToList();
-
+    List<Contact> cc = db.Contacts.ToList();
 }
 <div class="rev_slider_wrapper fullwidthbanner-container">
     <div id="rev-slider1" class="rev_slider fullwidthabanner">
@@ -183,13 +183,13 @@
                             <h3 class="heading font-size-22 text-white">SCHEDULE YOUR APPOINTMENT TODAY</h3>
                             <span class="icon text-white"><i class="as-icon-speedometer2"></i></span>
                             <div class="sub-heading text-white font-size-16">
-                                CALL : 9780551900 ?
+                                CALL : @cc[0].Mobile ?
                             </div>
                         </div>
                     </div>
 
                     <div class="button-wrap ">
-                        <a href="tel:9780551900" class="big wprt-button white">Call Now</a>
+                        <a href="@cc[0].Mobile" class="big wprt-button white">Call Now</a>
                     </div>
                 </div>
             </div>
