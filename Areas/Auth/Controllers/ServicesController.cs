@@ -16,7 +16,7 @@ namespace Sembhi.Areas.Auth.Controllers
     public class ServicesController : Controller
     {
         private dbcontext db = new dbcontext();
-        public static string img;
+        public static string img, thumb;
         // GET: Auth/Services
         public async Task<ActionResult> Index()
         {
@@ -54,6 +54,7 @@ namespace Sembhi.Areas.Auth.Controllers
             if (ModelState.IsValid)
             {
                 service.Image = Help.Resize(file, 500, 800);
+                service.Thumbnail = Help.Resize(file, 250, 400);
                 db.Services.Add(service);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
@@ -71,6 +72,7 @@ namespace Sembhi.Areas.Auth.Controllers
             }
             Service service = await db.Services.FindAsync(id);
             img = service.Image;
+            thumb = service.Thumbnail;
             if (service == null)
             {
                 return HttpNotFound();
@@ -88,6 +90,16 @@ namespace Sembhi.Areas.Auth.Controllers
             if (ModelState.IsValid)
             {
                 service.Image = file != null ? Help.Resize(file, 500, 800) : img;
+                service.Thumbnail = file != null ? Help.Resize(file, 250, 400) : thumb;
+                #region delete file
+                string fullPath = Request.MapPath("~/UploadedFiles/" + img);
+                string Thumb = Request.MapPath("~/UploadedFiles/" + thumb);
+                if (System.IO.File.Exists(fullPath))
+                {
+                    System.IO.File.Delete(fullPath);
+                    System.IO.File.Delete(Thumb);
+                }
+                #endregion
                 db.Entry(service).State = EntityState.Modified;
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");

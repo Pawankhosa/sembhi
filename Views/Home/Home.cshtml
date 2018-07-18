@@ -212,7 +212,7 @@
                                     <h3 class="title"><a target="_blank" href="#">@ser.Name</a></h3>
                                     <div class="desc">@Html.Raw(ser.ShortDescription)</div>
                                     <div class="elm-btn">
-                                        <a class="small wprt-button outline ol-accent" href="#">READ MORE</a>
+                                        @*<a class="small wprt-button outline ol-accent" href="#">READ MORE</a>*@
                                         @Html.ActionLink("READ MORE","ServiceDetails",new { id=ser.id })
                                     </div>
                                 </div>
