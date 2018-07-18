@@ -556,6 +556,8 @@
     <Content Include="Areas\Auth\Views\Accounts\Details.cshtml" />
     <Content Include="Areas\Auth\Views\Accounts\Edit.cshtml" />
     <Content Include="Areas\Auth\Views\Accounts\Index.cshtml" />
+    <Content Include="Areas\Auth\Views\Accounts\Login.cshtml" />
+    <Content Include="Views\Shared\Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

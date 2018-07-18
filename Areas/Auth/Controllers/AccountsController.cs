@@ -125,5 +125,23 @@ namespace Sembhi.Areas.Auth.Controllers
             }
             base.Dispose(disposing);
         }
+        public ActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Login([Bind(Include = "id,Name,Mobile,Username,Password")] Account account)
+        {
+            Account acc = db.Accounts.Where(x => x.Username == account.Username && x.Password == account.Password).FirstOrDefault();
+            if (acc != null)
+            {
+                return RedirectToAction("Index", "sliders");
+            }
+            else
+            {
+                return View();
+            }
+
+        }
     }
 }

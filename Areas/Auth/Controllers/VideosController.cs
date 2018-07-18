@@ -31,6 +31,7 @@ namespace Sembhi.Areas.Auth.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Video video = await db.Videos.FindAsync(id);
+         
             if (video == null)
             {
                 return HttpNotFound();
@@ -88,6 +89,19 @@ namespace Sembhi.Areas.Auth.Controllers
             if (ModelState.IsValid)
             {
                 video.Image = file != null ? Help.Resize(file, 400, 400) : img;
+                #region delete file
+                string fullPath = Request.MapPath("~/UploadedFiles/" + img);
+                if (img == video.Image)
+                {
+                }
+                else
+                {
+                    if (System.IO.File.Exists(fullPath))
+                    {
+                        System.IO.File.Delete(fullPath);
+                    }
+                }
+                #endregion
                 db.Entry(video).State = EntityState.Modified;
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");

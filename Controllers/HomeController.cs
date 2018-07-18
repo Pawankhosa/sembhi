@@ -47,7 +47,8 @@ namespace Sembhi.Controllers
         // GET: Home/Create
         public ActionResult ContactUs()
         {
-            return View();
+            Contact cc = db.Contacts.ToList().FirstOrDefault();
+            return View(cc);
         }
 
         // POST: Home/Create

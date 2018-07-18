@@ -34,20 +34,7 @@ namespace LLRM.Areas.Auth.Models
         public string Image { get; set; }
 
     }
-    public class Campuslife
-    {
-        public int id{ get; set; }
-        public string Image { get; set; }
-    }
-    public class Tour
-    {
-        public int id { get; set; }
-        [Required]
-        public string Title { get; set; }
-        [Required]
-        public string Url { get; set; }
-        public string Image { get; set; }
-    }
+   
     public class Pages
     {
         public int id { get; set; }

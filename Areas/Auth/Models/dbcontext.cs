@@ -15,14 +15,7 @@ namespace Admin2.Models
         public System.Data.Entity.DbSet<LLRM.Areas.Auth.Models.slider> sliders { get; set; }
 
         public System.Data.Entity.DbSet<LLRM.Areas.Auth.Models.News> News { get; set; }
-
-        public System.Data.Entity.DbSet<LLRM.Areas.Auth.Models.Campuslife> Campuslives { get; set; }
-
-        public System.Data.Entity.DbSet<LLRM.Areas.Auth.Models.Tour> Tours { get; set; }
-
         public System.Data.Entity.DbSet<LLRM.Areas.Auth.Models.Pages> Pages { get; set; }
-
-        
 
         public System.Data.Entity.DbSet<LLRM.Areas.Auth.Models.Album> Albums { get; set; }
 

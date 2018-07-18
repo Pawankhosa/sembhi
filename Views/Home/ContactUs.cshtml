@@ -1,7 +1,8 @@
-﻿
+﻿@model LLRM.Areas.Auth.Models.Contact
+
 @{
     ViewBag.Title = "ContactUs";
-    Layout = "~/Views/Shared/Main.cshtml";
+    Layout = "~/Views/Shared/Layout.cshtml";
 }
 
 <div id="featured-title" class="clearfix featured-title-left">
@@ -45,7 +46,7 @@
                         <i class="rt-icon-placeholder2"></i>
                     </div>
                     <h3 class="heading"><a href="#">ADDRESS:</a></h3>
-                    <p class="desc">1379 Shoreline Parkway, Mountain View, CA 94043, United States.</p>
+                    <p class="desc">@Model.Address</p>
                 </div><!-- /.wprt-icon-box -->
 
                 <div class="wprt-spacer clearfix" data-desktop="25" data-mobi="25" data-smobi="25" style="height:25px"></div>
@@ -65,7 +66,7 @@
                         <i class="rt-icon-chat"></i>
                     </div>
                     <h3 class="heading"><a href="#">CALL US:</a></h3>
-                    <p class="desc">Phone: 718-999-3939 - Fax: 718-999-3979</p>
+                    <p class="desc">Phone: @Model.Mobile - Fax: @Model.Phone</p>
                 </div><!-- /.wprt-icon-box -->
 
                 <div class="wprt-spacer clearfix" data-desktop="0" data-mobi="35" data-smobi="35" style="height:0px"></div>
