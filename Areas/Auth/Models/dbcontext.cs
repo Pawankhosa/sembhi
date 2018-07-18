@@ -31,5 +31,9 @@ namespace Admin2.Models
         public System.Data.Entity.DbSet<LLRM.Areas.Auth.Models.Contact> Contacts { get; set; }
 
         public System.Data.Entity.DbSet<LLRM.Areas.Auth.Models.Service> Services { get; set; }
+
+        public System.Data.Entity.DbSet<LLRM.Areas.Auth.Models.Video> Videos { get; set; }
+
+        public System.Data.Entity.DbSet<LLRM.Areas.Auth.Models.Account> Accounts { get; set; }
     }
 }

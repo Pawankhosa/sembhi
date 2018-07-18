@@ -423,6 +423,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Auth\AuthAreaRegistration.cs" />
+    <Compile Include="Areas\Auth\Controllers\AccountsController.cs" />
     <Compile Include="Areas\Auth\Controllers\AlbumsController.cs" />
     <Compile Include="Areas\Auth\Controllers\ContactsController.cs" />
     <Compile Include="Areas\Auth\Controllers\GalleriesController.cs" />
@@ -430,6 +431,7 @@
     <Compile Include="Areas\Auth\Controllers\PagesController.cs" />
     <Compile Include="Areas\Auth\Controllers\ServicesController.cs" />
     <Compile Include="Areas\Auth\Controllers\slidersController.cs" />
+    <Compile Include="Areas\Auth\Controllers\VideosController.cs" />
     <Compile Include="Areas\Auth\Models\dbcontext.cs" />
     <Compile Include="Areas\Auth\Models\Helper.cs" />
     <Compile Include="Areas\Auth\Models\Home.cs" />
@@ -544,6 +546,16 @@
     <Content Include="Areas\Auth\Views\Contacts\Details.cshtml" />
     <Content Include="Areas\Auth\Views\Contacts\Edit.cshtml" />
     <Content Include="Areas\Auth\Views\Contacts\Index.cshtml" />
+    <Content Include="Areas\Auth\Views\Videos\Create.cshtml" />
+    <Content Include="Areas\Auth\Views\Videos\Delete.cshtml" />
+    <Content Include="Areas\Auth\Views\Videos\Details.cshtml" />
+    <Content Include="Areas\Auth\Views\Videos\Edit.cshtml" />
+    <Content Include="Areas\Auth\Views\Videos\Index.cshtml" />
+    <Content Include="Areas\Auth\Views\Accounts\Create.cshtml" />
+    <Content Include="Areas\Auth\Views\Accounts\Delete.cshtml" />
+    <Content Include="Areas\Auth\Views\Accounts\Details.cshtml" />
+    <Content Include="Areas\Auth\Views\Accounts\Edit.cshtml" />
+    <Content Include="Areas\Auth\Views\Accounts\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

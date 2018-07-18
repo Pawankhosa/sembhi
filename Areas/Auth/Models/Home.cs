@@ -110,4 +110,27 @@ namespace LLRM.Areas.Auth.Models
         public string Address { get; set; }
      
     }
+    public class Account
+    {
+        public int id { get; set; }
+        [Required]
+        public string Name { get; set; }
+        [Required]
+        public string Mobile { get; set; }
+        [Required]
+        public string Username { get; set; }
+        [Required]
+        public string Password { get; set; }
+
+    }
+    public class Video
+    {
+        public int id { get; set; }
+        [Required]
+        public string Name { get; set; }
+        public string Image { get; set; }
+        [Required]
+        public string Url { get; set; }
+
+    }
 }

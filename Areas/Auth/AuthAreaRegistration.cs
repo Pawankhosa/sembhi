@@ -17,7 +17,7 @@ namespace Sembhi.Areas.Auth
             context.MapRoute(
                 "Auth_default",
                 "Auth/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new { action = "Home", id = UrlParameter.Optional }
             );
         }
     }
