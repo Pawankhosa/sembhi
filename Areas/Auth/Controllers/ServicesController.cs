@@ -54,7 +54,7 @@ namespace Sembhi.Areas.Auth.Controllers
             if (ModelState.IsValid)
             {
                 service.Image = Help.Resize(file, 500, 800);
-                service.Thumbnail = Help.Resize(file, 250, 400);
+                service.Thumbnail = Help.Resize(file, 240, 384);
                 db.Services.Add(service);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
@@ -90,7 +90,7 @@ namespace Sembhi.Areas.Auth.Controllers
             if (ModelState.IsValid)
             {
                 service.Image = file != null ? Help.Resize(file, 500, 800) : img;
-                service.Thumbnail = file != null ? Help.Resize(file, 250, 400) : thumb;
+                service.Thumbnail = file != null ? Help.Resize(file, 240, 384) : thumb;
                 #region delete file
                 string fullPath = Request.MapPath("~/UploadedFiles/" + img);
                 string Thumb = Request.MapPath("~/UploadedFiles/" + thumb);
